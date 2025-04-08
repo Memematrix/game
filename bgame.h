@@ -1,6 +1,6 @@
 #ifndef bgame_h
 #define bgame_h
-#define SIZE 15
+#define SIZE 20 //min 7 max 20
 #define MAP_START_POS_X (960/32 - SIZE/2)*32 //auto put map in center screen
 #define MAP_START_POS_Y 160
 #include "SDL.h"
