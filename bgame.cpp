@@ -15,8 +15,8 @@ int boomTimer = -1; //time for explosion animation
 int isHit = 0;
 SDL_Point mousePos;
 pair<double, double> trajectory;
-vector<int> shipLen = {1,1,1,1,1};
-vector<vector<int>> shipHP = {{1,1,1,1,1}, {1,1,1,1,1}};
+vector<int> shipLen = {3,4,5,6,7};
+vector<vector<int>> shipHP = {{3,4,5,6,7}, {3,4,5,6,7}};
 vector<int> shipLeft = {5, 5};
 vector<set<pair<int,int>>> usedCoordinate(2);
 vector<vector<vector<pair<int,int>>>> shipCoordinate(2, vector<vector<pair<int,int>>>(5));
@@ -423,8 +423,8 @@ void Game::gameReset() {
         pIndex = 0;
         isHit = 0;
         hasShot = false;
-        shipLen = {1,1,1,1,1};
-        shipHP = {{1,1,1,1,1}, {1,1,1,1,1}};
+        shipLen = {3,4,5,6,7};
+        shipHP = {{3,4,5,6,7}, {3,4,5,6,7}};
         shipLeft = {5, 5};
         usedCoordinate.resize(2);
         shipCoordinate.resize(2, vector<vector<pair<int, int>>>(5));
